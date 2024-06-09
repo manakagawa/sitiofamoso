@@ -80,7 +80,6 @@
     cursor: pointer;
 }
 
-/* Contenido principal */
 .contenido {
     margin-top: 80px;
     padding-right: 5px;
@@ -93,7 +92,7 @@
 }
 
 .imagenes{
-    columns: 6 240px;
+    columns: 5 240px;
     margin: auto;
 }
 
@@ -103,20 +102,29 @@
 }
 
 .imagenes .card-image img {
-    border-radius: 8%;
-    min-width: 240px;
-    max-width: 240px ;
+    border-radius: 10px;
+    min-width: 260px;
+    max-width: 260px ;
 }
 
 .boton{
     position:absolute;
     left: 60%;
     top:5%;
-    background-color: rgb(255, 85, 85);
+    background-color: rgb(215, 215, 215);
     padding: 12px 14px;
     border-radius: 30px;
     border: none;
 }
+
+.mas{
+    border-radius: 50%;
+    background-color: #e9ecef;
+    height: 24px;
+    cursor: pointer;
+}
+  
+
 
 @media screen and (max-width: 580px) {
     .contenedor {
@@ -127,7 +135,7 @@
     }
 
     .header {
-        padding: 5px 10px;
+        padding: 10px 10px;
     }
 
     .barra {
@@ -139,7 +147,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 20%;
+        gap: 30%;
         width: 100%;
     }
 
@@ -157,6 +165,10 @@
     }
 
     .items-der img {
+        height: 20px;
+    }
+
+    .mas{
         height: 20px;
     }
 }
